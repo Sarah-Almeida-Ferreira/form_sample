@@ -11,7 +11,7 @@ export default mergeConfig(
       root: fileURLToPath(new URL('./', import.meta.url)),
       setupFiles: './test-setup.ts',
       coverage: {
-        exclude: ['*.{cjs,ts}', 'nightwatch', 'src/*.{vue,ts}', 'src/router'],
+        exclude: ['*.{cjs,ts}', 'src/*.{vue,ts}', 'src/router'],
         reporter: ['text', 'json', 'html']
       }
     }
